@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.forasterisk.ilkeok">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".utils.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ilkeok">
+
+        <!--  -->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Ilkeok.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.EpisodeListActivity"
+            android:label=""
+            android:logo="@mipmap/logo_main_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.EpisodeDetailActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Ilkeok.NoActionBar" />
+        <activity
+            android:name=".ui.IlkeokAllActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Ilkeok.Translucent" />
+        <activity
+            android:name=".ui.LogoutActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Ilkeok.Translucent" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:label="로그인이 필요합니다"
+            android:screenOrientation="portrait" />
+
+        <!-- Alarm Related -->
+        <receiver android:name=".service.ScheduleBroadcastReceiver" />
+        <receiver
+            android:name=".service.BootBroadcastReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!--  -->
+        <activity android:name=".ui.WebtoonListActivity"></activity>
+    </application>
+
+</manifest>

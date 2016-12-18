@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:bottom="2.0dp">
+        <shape
+            android:dither="true"
+            android:shape="rectangle">
+
+            <solid android:color="@color/card_shadow" />
+        </shape>
+    </item>
+
+    <item android:top="0.8dp">
+        <shape
+            android:dither="true"
+            android:shape="rectangle">
+
+            <gradient
+                android:angle="270"
+                android:endColor="@color/card_shadow_end"
+                android:startColor="@color/card_shadow" />
+        </shape>
+    </item>
+
+</layer-list>

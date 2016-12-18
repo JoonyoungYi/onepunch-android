@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">일격</string>
+
+    <string name="tag_webtoon">tag_webtoon</string>
+    <string name="tag_episode">tag_episode</string>
+    <string name="tag_position">tag_position</string>
+    <string name="tag_url">tag_url</string>
+</resources>

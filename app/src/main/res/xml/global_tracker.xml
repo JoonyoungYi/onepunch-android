@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="TyphographyDashes">
+
+    <string name="ga_logLevel">verbose</string>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!-- The screen names that will appear in reports -->
+    <screenName name="com.forasterisk.bab.ui.DetailActivity">DetailActivity</screenName>
+    <screenName name="com.forasterisk.bab.ui.CommentActivity">DetailCommentActivity</screenName>
+    <screenName name="com.forasterisk.bab.ui.MainActivity">MainActivity</screenName>
+    <screenName name="com.forasterisk.bab.ui.SearchActivity">SearchActivity</screenName>
+    <screenName name="com.forasterisk.bab.ui.SettingActivity">SettingActivity</screenName>
+    <screenName name="com.forasterisk.bab.ui.SettingDeveloperActivity">SettingDeveloperActivity</screenName>
+    <screenName name="com.forasterisk.bab.ui.SplashActivity">SplashActivity</screenName>
+
+
+    <string name="ga_trackingId"></string>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_ilkeok_all"
+        android:icon="@drawable/ic_ilkeok_all"
+        android:orderInCategory="1"
+        android:title="전부 일격 날리기"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="2"
+        android:title="로그아웃"
+        app:showAsAction="never" />
+</menu>
